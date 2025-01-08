@@ -22,5 +22,4 @@ from user.apis import get_user_detail
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/users/', include('user.urls')),
-    # path('api/users/<id>', get_user_detail, name='get_user_detail'),
 ]

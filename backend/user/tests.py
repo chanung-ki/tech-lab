@@ -6,9 +6,8 @@ from django.urls import reverse
 class UserAPITest(APITestCase):
     def test_get_user(self):
         """
-            유저 정보를 조회할 수 있어야 한다.
+            유저 상세 정보를 조회할 수 있어야 한다.
         """
-        
         # test 객체 생성
         user_instance = User.objects.create(
             email='test@test.com',
